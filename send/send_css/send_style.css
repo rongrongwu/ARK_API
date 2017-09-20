@@ -1,0 +1,739 @@
+/*container*/
+/*.container{
+  margin: 0;
+  padding: 0;
+  border:none;
+  font-family: 'cwTeXHei', sans-serif;
+  width: 100%;
+}*/
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+
+/*header*/
+header{
+  height: 476px;
+  background: #66a8c6;
+  padding-top: 16px;
+}
+.cookie{
+  margin-bottom: 60px;
+  font-size: 12px;
+  margin-left: 96px;
+  color: #ededed;
+}
+.article_form_headertxt{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  text-shadow: 1.4px 1.4px 4.8px rgba(0, 0, 0, 0.3);
+}
+.header_all{
+  width: 669px;
+  height: 536px;
+  margin: 0 auto;
+}
+.form_style{
+  text-align: center;
+}
+.send_form_top{
+  height: 160px;
+  background: #ffffff;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+}
+/*input*/
+.form_title_out{
+  margin: 0 auto;
+  padding-bottom: 9px;
+  padding-top: 20px;
+  width: 618px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+}
+.form_title{
+  width: 615px;
+  border-style: none;
+  outline: none;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #e4007f;
+    font-size: 16px;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #e4007f;
+   opacity:  1;
+   font-size: 16px;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #e4007f;
+   opacity:  1;
+   font-size: 16px;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #e4007f;
+   font-size: 16px;
+}
+/*textarea*/
+.form_content_out{
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 618px;
+}
+.form_content{
+  width: 615px;
+  height: 90px;
+  resize : none;
+  border: 0;
+  outline: none;
+}
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #6e6e6e;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #6e6e6e;
+   opacity:  1;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #6e6e6e;
+   opacity:  1;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #6e6e6e;
+}
+/*對話框下面*/
+.send_form_bottom{
+  background: #eeeeee;
+  height: 30px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+}
+.send_form_bottom_time{
+  line-height: 30px;
+  float: right;
+  margin-right: 13px;
+  font-size: 12px;
+  color: #9f9f9f;
+}
+.sed_from_but{
+  margin-top: 50px;
+}
+
+/*article*/
+/*text_style*/
+.title_text_style{
+  font-size: 16px;
+  color: #474646;
+}
+.content_text_style{
+  font-size: 14px;
+  color: #6e6e6e;
+}
+article{
+  padding-top: 57px;
+  padding-bottom: 70px;
+  background-color: #707070;
+  /*設定最小高度避免背景留白*/
+  min-height: 430px;
+}
+.article_headertxt{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  text-shadow: 1.4px 1.4px 4.8px rgba(0, 0, 0, 0.3);
+}
+.send_all{
+  width: 660px;
+  margin: 0 auto 20px auto;
+  box-shadow: 1.4px 1.4px 4.8px 0.3px rgba(0, 0, 0, 0.2);
+}
+.send_top{
+  padding-top: 38px;
+  height: 121px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  background-color: #e5e5e5;
+}
+.send_img{
+  margin-left: 50px;
+  float: left;
+}
+.send_box{
+  margin-left: 50px;
+  width: 445px;
+  float: left;
+}
+.send_title{
+  border-bottom:1px;
+  border-color: #d1d1d1;
+  border-bottom-style: solid;
+  padding-bottom: 8px;
+  overflow:hidden;
+	text-overflow : ellipsis;
+  white-space : nowrap;
+}
+.send_content{
+  padding-top: 8px;
+  display: -webkit-box;
+  overflow:hidden;
+  text-overflow : ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+.send_bottom{
+  background: #eeeeee;
+  height: 30px;
+  line-height: 30px;
+  width: 660px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+}
+.send_bottom_time{
+  float: left;
+  margin-left: 23px;
+  font-size: 12px;
+  color: #9f9f9f;
+}
+.send_bottom_features{
+  width: 18px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  float: right;
+  margin-right: 16px;
+}
+.more{
+  margin: 50px auto 0px auto;
+}
+/*send_window 跳出的詳細內容*/
+.send_window{
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 670px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.overflow_wh{
+  min-height: inherit;
+  max-height: 700px;
+  overflow-x:hidden;
+  overflow-y:inherit;
+}
+.window_close{
+  margin: 23px 0px 0px 630px;
+}
+.send_window_style{
+  width: 530px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+
+}
+.send_window_img{
+  width: 50px;
+  height: 50px;
+}
+.send_rec_window_img{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  background: #b5b5b5;
+  border-radius:99em;
+}
+.send_window_box{
+  width: 445px;
+}
+.send_window_content{
+  margin-bottom: 10px;
+}
+.send_window_time{
+  margin-top: 5px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: #9f9f9f;
+}
+.receive_bottom_features{
+  margin-top: 11px;
+  width: 44px;
+  height: 20px;
+}
+.a133{
+  background: blue;
+  width: 450px;
+}
+/*沒人回應*/
+.no_receive{
+  /*控制回復訊息區的顯示*/
+  /*display: none;*/
+  text-align: center;
+}
+/*別人回復的訊息(獨立控制)*/
+.send_receive_style{
+  /*控制回復訊息區的顯示*/
+  /*display: none;*/
+  border-top:1px;
+  border-color: #d1d1d1;
+  border-top-style: solid;
+  padding-top: 30px;
+  margin-bottom: 33px;
+}
+.rec_from_time{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-right: 13px;
+  background: #e5e5e5;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+  font-size: 12px;
+  color: #9f9f9f;
+}
+/*刪除與檢與跳出內容共通屬性*/
+.del_rep_win{
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 500px;
+  height: 330px;
+  border-radius: 10px;
+}
+.delete_window_button{
+  width: 188px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.features_title{
+  text-align: center;
+  margin-top: 90px;
+  font-size: 18px;
+  letter-spacing: 3.7px;
+  color: #6e6e6e;
+}
+.features_content{
+  text-align: center;
+  margin-top: 32px;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #6e6e6e;
+  margin-bottom: 90px;
+}
+#delete_no,#report_no{
+  margin-right: 20px;
+}
+/*按鈕區*/
+.button_blue{
+  float: left;
+  width: 84px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 2px;
+  color: #6cb7d9;
+  border: solid 1px #6cb7d9;
+}
+.button_blue:hover{
+  border-color: #3c9ac4;
+  color: #3c9ac4;
+}
+.button_pink{
+ float: left;
+ text-align: center;
+ line-height: 28px;
+ width: 84px;
+ height: 28px;
+ color: #ffffff;
+ background-color: #e4007f;
+}
+.button_pink:hover{
+  background: #d20075;
+}
+.button_pink_input{
+  margin-right: 20px;
+  width: 65px;
+  height: 24px;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e4007f;
+}
+.button_pink_input:hover{
+  background: #d20075;
+  text-decoration: none;
+}
+.button_blue_input{
+  margin-right: 20px;
+  width: 65px;
+  height: 24px;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  background: #5e9bb7;
+}
+.button_blue_input:hover{
+  background: #3c9ac4;
+  text-decoration: none;
+}
+.button_buder_blue_more{
+  text-align: center;
+  line-height: 26px;
+  width: 100px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #6cb7d9;
+}
+.more div{
+  color: #6cb7d9;
+}
+.button_buder_blue_more:hover{
+  border-color: #3c9ac4;
+}
+.button_buder_blue_more:hover div{
+  color: #3c9ac4;
+}
+/*footer*/
+html, body{
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border:none;
+}
+.container{
+  /*控制nav相對高度*/
+  margin-top: -40px;
+  width: 100%;
+  min-height: 100%;
+  margin: auto 0;
+  padding: 0 0 100px 0;
+  border:none;
+  background-color: #707070;
+}
+footer{
+ margin-top: -30px;
+ height: 30px;
+ width: 100%;
+ background-color: #5e9bb7;
+}
+.footer_txt
+{
+  text-align: center;
+  font-size: 10px;
+  color: #6cb7d9;
+  line-height:30px;
+}
+/*hover和互動*/
+a:hover{
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+}
+li a div:hover{
+  color: #ffffff;
+  background: #406474;
+}
+.myLink{
+  cursor: pointer;
+}
+#blackbg01{
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+#blackbg02{
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+}
+/*delete*/
+.delete_all{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.delete_all img{
+  background: #eeeeee;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.receive_bottom_features .delete_all img{
+  background: #ffffff;
+}
+.delete_all img:nth-of-type(2):hover{
+  opacity:0;
+}
+/*report*/
+.report_all{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.report_all img{
+  background: #ffffff;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.report_all img:nth-of-type(2):hover{
+  opacity:0;
+}
+/*ham&nav*/
+#here{
+  background: #406474;
+}
+#here div {color: #ffffff;
+}
+#ham_here{
+  background: #406474;
+}
+#ham_here div {color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+  .header_all{
+    width: 90%;
+  }
+  .send_top{
+    padding-top: 21px;
+  }
+  .form_title_out{
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .form_title{
+    width: 100%;
+  }
+  .form_content_out{
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .form_content{
+    width: 100%;
+  }
+  /*send外面的*/
+  .send_all{
+    width: 90%;
+  }
+  .send_img{
+    /*display: none;*/
+    margin-left: 20px;
+    line-height: 80px;
+  }
+  .send_box{
+    /*margin-left: 15px;*/
+    width: 75%;
+    /*float: right;*/
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+  .send_title{
+    overflow:hidden;
+  	text-overflow : ellipsis;
+    white-space : nowrap;
+  }
+  .send_content{
+    display: -webkit-box;
+    overflow:hidden;
+    text-overflow : ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+  }
+  .send_bottom{
+    width: 100%;
+  }
+  .send_bottom_time{
+    margin-left: 15px;
+  }
+  /*send裡面的*/
+  .send_window{
+    width: 90%;
+  }
+  .overflow_wh{
+    min-height: inherit;
+    max-height: 600px;
+  }
+  .window_close{
+    margin: 23px 5px 0px 90%;
+  }
+  .send_window_style{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .send_window_box{
+    width: 80%;
+    margin-right: 4%;
+  }
+  /*設定別人回復的時間位置*/
+  .send_receive_style .send_window_time{
+    margin-top: 15px;
+  }
+  /*刪除*/
+  .del_rep_win{
+    width: 70%;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 480px){
+  /*header*/
+  .cookie{
+    margin-left: 19px;
+  }
+  .header_all{
+    width: 90%;
+  }
+  .send_top{
+    padding-top: 21px;
+  }
+  .form_title_out{
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .form_title{
+    width: 100%;
+  }
+  .form_content_out{
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .form_content{
+    width: 100%;
+  }
+  /*send外面的*/
+  .send_all{
+    width: 90%;
+  }
+  .send_img{
+    display: none;
+  }
+  .send_box{
+    float: none;
+    margin-left: 15px;
+    width: 90%;
+  }
+  .send_title{
+    overflow:hidden;
+  	text-overflow : ellipsis;
+    white-space : nowrap;
+  }
+  .send_content{
+    display: -webkit-box;
+    overflow:hidden;
+    text-overflow : ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+  }
+  .send_bottom{
+    width: 100%;
+  }
+  .send_bottom_time{
+    margin-left: 15px;
+  }
+  /*send裡面的*/
+  .send_window{
+    width: 90%;
+  }
+  .overflow_wh{
+    min-height: inherit;
+    max-height: 400px;
+  }
+  .window_close{
+    /*float: right;*/
+    margin: 23px 5px 0px 85%;
+  }
+  .send_window_style{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /*設定數字的位置參考*/
+    position: relative;
+  }
+  .send_window_img{
+    display: none;
+  }
+  .send_window_box{
+    width: 90%;
+    float: left;
+    float: none;
+    margin: 0 auto;
+  }
+  .send_rec_window_img{
+    float: none;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    /*設定數字的位置*/
+    position: absolute;
+    bottom: 1px;
+    left: 5%;
+  }
+  .send_window_style .send_window_content{
+    margin-top: 20px;
+  }
+  /*設定別人回復的時間位置*/
+  .send_receive_style .send_window_time{
+    margin: 0 0 0 30px;
+    padding-bottom: 0;
+  }
+  .receive_bottom_features{
+    margin: 0;
+  }
+  /*刪除*/
+  .del_rep_win{
+    width: 90%;
+    height: 330px;
+  }
+}

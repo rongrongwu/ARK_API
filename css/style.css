@@ -1,0 +1,256 @@
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.claer{
+  clear:both;
+}
+
+/*header*/
+header{
+  position: relative;
+  z-index: -2;
+  background: #5e9bb7;
+}
+.header_all{
+  padding-top: 93px;
+  padding-left: 25%;
+  width: 100%;
+  height: 536px;
+  margin: 0 auto;
+}
+.video{
+  position: fixed;
+  z-index: -1;
+  top: -160px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.nav_li_B a{
+  color: #4c778b;
+}
+.header_txt{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  text-align:center;
+  padding-top: 96px;
+}
+.header_txtA{
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: 7.2px;
+  color: #ffffff;
+}
+.header_txtB{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.25;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  margin-top: 33px;
+}
+/*article*/
+article{
+  /*height: 690px;*/
+  padding-top: 65px;
+  background-color: #707070;
+  padding-bottom: 50px;
+}
+.text_styleA{
+ font-size: 18px;
+ letter-spacing: 3.6px;
+ text-align: left;
+ color: #ffffff;
+ text-shadow: 0px 2px 4.8px rgba(0, 0, 0, 0.3);
+}
+.text_styleB{
+  font-size: 14px;
+  line-height: 2.57;
+  letter-spacing: 2.8px;
+  color: #ffffff;
+}
+.line_change480{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.line_br480{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.line_none480{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.button_A{
+  width: 100px;
+  height: 26px;
+  line-height:26px;
+  text-align: center;
+  border-radius: 2px;
+  border: solid 1px #6cb7d9;
+  display:inline-block;
+  color: #6cb7d9;
+  font-size: 14px;
+}
+.button_B{
+  width: 100px;
+  height: 26px;
+  line-height:26px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #e4007f;
+  margin-left: 20px;
+  display:inline-block;
+  color: #ffffff;
+  font-size: 14px;
+}
+.button_A:hover{
+  border-color: #3c9ac4;
+  color: #3c9ac4;
+}
+.button_B:hover{
+  background: #d20075;
+}
+.aboutus_center{
+  text-align: center;
+}
+.aboutus_txtA{
+  margin-top: 20px;
+}
+.aboutus_txtB{
+  margin-top: 50px;
+}
+.aboutus_txtC{
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+.aboutus_txtD{
+  display:table;
+  margin: 0 auto;
+  padding: 0;
+}
+.aboutus_button{
+  height: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+/*footer*/
+html, body{
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border:none;
+}
+.container{
+  /*控制nav相對高度*/
+  margin-top: -40px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border:none;
+  background: #707070;
+  position: relative;
+  z-index: 0;
+}
+footer{
+ margin-top: -30px;
+ height: 30px;
+ width: 100%;
+ background-color: #5e9bb7;
+}
+.footer_txt
+{
+  text-align: center;
+  font-size: 10px;
+  color: #6cb7d9;
+  line-height:30px;
+}
+
+/*hover*/
+a:hover{
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+}
+li a div:hover{
+  color: #ffffff;
+  background: #406474;
+}
+@media screen and (max-width: 768px){
+  .header_all{
+    height: 373px;
+    padding-left: 30%;
+    padding-top: 30px;
+  }
+  .header_txt{
+    width: 320px;
+    height: 320px;
+    float: right;
+    margin-right: 5%;
+    padding-top: 77px;
+    line-height: 320px;
+  }
+  .video{
+    top: -250px;
+    left: 46%;
+  }
+}
+@media screen and (max-width: 480px){
+  .header_all{
+    padding-left: 0;
+    height:352px;
+    margin: 0 auto;
+    background: url(../images/index/landingpage_720x377.png);
+    background-size: cover ;
+    background-position: left;
+    background-repeat:no-repeat;
+    padding-top: 48px;
+  }
+  .video{
+    display: none;
+  }
+  .header_txt{
+    float: none;
+    width: 254px;
+    height: 254px;
+    margin: 0 auto;
+    padding-top: 62px;
+    line-height: 250px;
+  }
+  .header_txtA{
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 6px;
+  }
+  .header_txtB{
+      margin-top: 10px;
+      font-size: 14px;
+  }
+  .line_change480{
+    display: block;
+  }
+  .line_none480{
+    display: none;
+  }
+}

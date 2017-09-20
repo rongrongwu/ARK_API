@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <title>ark</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../images/index/ark_logo.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ham_style.css">
+    <link rel="stylesheet" href="../send/send_css/send_style.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../send/send_js/send_script.js"></script>
+    <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    </style>
+    <style>
+      <%= loginCollect.navsatus %> {display:none;}
+      a:hover {text-decoration:none};
+    </style>
+
+  </head>
+  <body>
+      <!-- hamburger -->
+      <div class="hamburger">
+        <div class="ham-style hamnav_style">
+          <ul class="ham">
+            <li>
+              <button class="hamburger-menu">
+                <span class="icon-bar"></span>
+                <span class=" icon-bar_short"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <ul class="ham_ul">
+                  <div  class="ham_close"><a href="#"><img src="..\images\index\index320_nav_close_icon.png" alt="logo"></a></div>
+                  <div class="li_hello"><div class="hello">Hi，您好</div></div>
+                  <!-- 活動資訊 -->
+                  <li class="ham_li_padding ham_but_01"><a href="../information/"><div class="left">
+                    <img class="ham_icom icom_mous_out01 icom_mous_out" src="../images/index/index320_infor_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in01" src="../images/index/index320_infor_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">活動資訊</div></a></li>
+                  <!-- 登入 -->
+                  <li class="login_none ham_li_padding ham_but_02"><a href="../login/"><div class="left">
+                    <img class="ham_icom icom_mous_out02 icom_mous_out" src="../images/index/index320_login_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in02" src="../images/index/index320_login_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">登入</div></a></li><!--class的login_none和logout_none可以消失-->
+                  <!-- 送船 -->
+                  <li class="logout_none ham_li_padding ham_but_03" id="here"><a href="../send/"><div class="left">
+                    <img class="ham_icom" src="../images/index/nav_burger_send_icon_white.png" alt="icon">
+                    <!-- <img class="ham_icom icom_mous_in03" src="../images/index/nav_burger_send_icon_blue.png" alt="icon"> -->
+                  </div><div class="ham_li_text">送船</div></a></li><!--登入才要出現-->
+                  <!-- 收船 -->
+                  <li class="logout_none ham_li_padding ham_but_04"><a href="../receive/"><div class="left">
+                    <img class="ham_icom icom_mous_out04 icom_mous_out" src="../images/index/nav_burger_receive_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in04" src="../images/index/nav_burger_receive_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">收船</div></a></li><!--登入才要出現-->
+                  <!-- 登出 -->
+                  <li class="logout_none logout_non ham_li_padding ham_but_05"><a href="../logout/"><div class="left">
+                    <img class="ham_icom icom_mous_out05 icom_mous_out" src="../images/index/nav_burger_logout_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in05" src="../images/index/nav_burger_logout_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">登出</div></a></li>
+                  <div class="clear"></div>
+                </ul>
+          </li>
+          </ul>
+        </div><!--ham-style-->
+        <div class="ham_logo">
+          <a href="../">
+            <div class="hamnav_style">
+              <img src="..\images\index\logo_34x26.png" alt="logo">
+            </div>
+            <div class="nav_li_B hamnav_style">ark</div>
+          </a>
+        </div>
+        <div class="clear"></div>
+        <div id="blackbg00"></div><!--黑背景-->
+      </div><!--hambuger-->
+  <div class="container">
+    <nav>
+      <div class="nav_style">
+        <ul>
+          <li class="nav_li_A"><img src="..\images\index\logo_34x26.png" alt="logo"></li>
+          <li><div class="nav_li_B"><a href="../">方舟．ark</a></div></li>
+        </ul>
+        <ul class="nav_right">
+          <li class="nav_li_C"><a href="../information/"><div>活動資訊</div></a></li>
+          <li class="nav_li_D login_none"><a href="../login/"><div>登入</div></a></li><!--class的login_none和logout_none可以消失-->
+          <li class="nav_li_C logout_none"><a href="../receive/"><div>收船</div></a></li><!--登入才要出現-->
+          <li class="nav_li_C logout_none" id="here"><a href=""><div>送船</div></a></li><!--登入才要出現-->
+          <li class="nav_li_D logout_none"><a href="../logout/"><div>登出</div></a></li><!--登入才要出現-->
+        </ul>
+      </div>
+    <div class="clear"></div>
+    </nav>
+    <!-- 發訊息區 -->
+    <header>
+      <div class="cookie">首頁>送船</div>
+      <div class="article_form_headertxt">請寫下您想說的話</div>
+      <div class="header_all">
+        <div class="form_style">
+          <form action="../sendboat/" method="post">
+            <div class="send_form_top">
+              <div class="form_title_out">
+                <input class="form_title" type="text" name="title"  placeholder="今天我想說(標題)" value="">
+              </div>
+              <div class="form_content_out">
+                <textarea class="form_content" name="content" placeholder="在想些什麼呢？（內文)" rows="5" cols="60"></textarea>
+              </div>
+            </div><!--send_form_top-->
+            <div class="send_form_bottom">
+              <!-- 抓時間 -->
+              <div class="send_form_bottom_time">
+                >><%= moment(Date.now()).format('YYYY/MM/DD HH:mm') %>
+              </div>
+            </div><!--send_bottom-->
+            <!-- 按鈕 -->
+            <div class="sed_from_but">
+              <input  class="button_blue_input" type="reset" value="清除">
+              <input  class="button_pink_input" type="submit" name="" value="傳送">
+            </div>
+          </form>
+        </div>
+      </div><!--header_all-->
+    </header>
+    <div id="blackbg01"></div><!-- 黑背景zindex=1 -->
+    <div id="blackbg02"></div><!-- 黑背景zindex=3 -->
+    <!-- 收船內容 -->
+    <article>
+      <div class="article_headertxt">您送出的船＆收到的訊息</div>
+
+      <% for(var i =0;i<boatdata.length;i++){ %>
+      <!-- 收船的內容需要重複 -->
+      <div class="send_all">
+        <div class="send_top myLink" onclick="setNextShow('<%= boatdata[i].boat_id %>')">
+          <div class="send_img">
+            <img src="../images/shared_img/message_logo_pic01.png" alt="boat">
+          </div>
+          <div class="send_box">
+            <!-- 標題 -->
+            <div class="send_title title_text_style">
+              <%= boatdata[i].send_title %>
+            </div>
+            <!-- 內容 -->
+            <div class="send_content content_text_style">
+              <%= boatdata[i].send_content %>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div><!--send_top-->
+        <div class="send_bottom">
+          <!-- 抓時間 -->
+          <div class="send_bottom_time">
+            >><%= moment(boatdata[i].send_time).format('YYYY/MM/DD HH:mm') %>
+          </div>
+          <!-- 需要刪除內容-->
+          <div class="send_bottom_features">
+            <!-- 刪除 -->
+            <div class="delete_all">
+              <img class="myLink delete delete_pink" src="../images/shared_img/message_del _icon_hover.png" alt="delete">
+              <img class="myLink delete delete_black" src="../images/shared_img/message_del _icon.png" alt="delete">
+            </div>
+          </div>
+        </div><!--send_bottom-->
+        <!-- 收船的內容需要重複end -->
+
+        <!-- 顯示更多內容跳出視窗 zindex=2 -->
+        <div class="send_window" id="window<%= boatdata[i].boat_id %>">
+          <div class="overflow_wh">
+          <!-- 對話框叉叉 -->
+          <img class="myLink window_close" src="../images/index/index320_nav_close_icon.png" alt="close">
+          <!-- 我的內文 -->
+          <div class="send_window_style">
+              <div class="left send_window_img">
+                <img src="../images/shared_img/message_logo_pic01.png" alt="boat">
+              </div>
+              <div class="right send_window_box">
+                <div class="send_window_title title_text_style">
+                  <%= boatdata[i].send_title %>
+                </div>
+                <!-- 抓時間 -->
+                <div class="send_window_time">
+                  >><%= moment(boatdata[i].send_time).format('YYYY/MM/DD HH:mm'); %>
+                </div>
+                <!-- 內容 -->
+                <div class="send_window_content content_text_style">
+                  <%= boatdata[i].send_content %>
+                </div>
+              </div><!--right send_window_box-->
+              <div class="clear"></div>
+          </div><!--send_window_style-->
+          <!-- 我的內文end -->
+          <% if(!hasResponse[i]){ %>
+          <!-- 沒人回應時 -->
+          <div class="send_window_style send_receive_style no_receive">
+              目前沒人回應
+          </div><!--send_receive_style-->
+          <!-- 沒人回應時end -->
+          <% }else{ %>
+          <% var countreceive = 1 %>
+          <% for(var k=0;k<receiveboat[i].length;k++){ %>
+          <%    if(receiveboat[i][k].is_receive){ %>
+          <!-- 對方回應的內文需要重複 -->
+          <div class="send_window_style send_receive_style">
+              <!-- 數字要做改變 -->
+              <div class="left send_rec_window_img">
+                <%= countreceive++ %>
+              </div>
+              <div class="right send_window_box">
+                <!-- 內容 -->
+                <div class="send_window_content content_text_style">
+                  <%= receiveboat[i][k].receive_content%>
+                </div>
+                <!-- 抓時間與刪除檢舉按鈕 -->
+                  <div class="left send_window_time">
+                    >><%= moment(receiveboat[i][k].receive_time).format('YYYY/MM/DD HH:mm'); %>
+                  </div>
+                  <div class="right receive_bottom_features">
+                    <!-- 檢舉 -->
+                    <div class="report_all">
+                      <img class="myLink report" src="../images/shared_img/message_report_icon_hover.png" alt="Report">
+                      <img class="myLink report" src="../images/shared_img/message_report_icon.png" alt="Report">
+                    </div>
+                    <!-- 刪除 -->
+                    <div class="delete_all">
+                      <img class="myLink delete" src="../images/shared_img/message_del _icon_hover.png" alt="delete">
+                      <img class="myLink delete" src="../images/shared_img/message_del _icon.png" alt="delete">
+                    </div>
+                  </div><!--receive_bottom_features-->
+                  <div class="clear"></div>
+
+              </div><!--right send_window_box-->
+              <div class="clear"></div>
+          </div><!--send_receive_style-->
+          <!-- 對方回應的內文需要重複 end-->
+          <% }}} %>
+
+        </div><!--overflow_wh-->
+        </div><!--send_window-->
+        <!-- 顯示更多內容跳出視窗 zindex=2 end -->
+
+        <!-- 刪除跳出視窗 zindex=4 -->
+        <div class="delete_window del_rep_win">
+          <div class="features_title">刪除</div>
+          <div class="features_content">將刪除這艘船，而且你將無法再找到它</div>
+          <div class="delete_window_button">
+            <div class="myLink button_blue" id="delete_no">取消</div>
+            <!-- 刪除內容按鈕 -->
+            <div class="myLink button_pink" id="delete_yes">刪除</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- 檢舉跳出視窗 zindex=4 -->
+        <div class="report_window del_rep_win">
+          <div class="features_title">檢舉</div>
+          <div class="features_content">此內容讓人不舒服，我要檢舉！</div>
+          <div class="delete_window_button">
+            <div class="myLink button_blue" id="report_no">取消</div>
+            <!-- 檢舉內容按鈕 -->
+            <div class="myLink button_pink" id="report_yes">檢舉</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div><!--send_all-->
+      <!-- 收船的內容需要重複end -->
+      <% } %>
+
+
+        <div class="more button_buder_blue_more">
+          <a href="#"><div>＋看更多</div></a>
+        </div>
+    </article>
+
+
+    </div><!--container-->
+    <footer>
+      <div class="footer_txt">
+        Copyright © 2017
+      </div>
+    </footer>
+    <!-- <script src="../js/jquery.js"></script> -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ham_script.js"></script>
+  </body>
+</html>

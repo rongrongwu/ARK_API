@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <title>ark</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../images/index/ark_logo.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ham_style.css">
+    <link rel="stylesheet" href="../login/login_style.css">
+    <script>
+    //禁止输入空格
+      function NoSapceInput(evt) {
+        evt = window.event || evt;
+        var key = evt.keyCode ? evt.keyCode: evt.which; //兼容IE和Firefox获得keyBoardEvent对象的键值
+        if (key == 32 || key == 188 || key == 222 || (evt.ctrlKey) && (key==86)) {
+          return false;
+        }
+        // if(evt.shiftKey && ((key >= 33 && key <= 47) ||
+        //                     (key >= 58 && key <= 63) ||
+        //                     (key >= 91 && key <= 96) ||
+        //                     (key >=123 && key <= 126))){
+        //   alert("請勿輸入特殊符號");
+        //   return false;
+        // }
+        return true;
+      }
+
+      function checkpasswordsame(form){
+        if(registerform.id.value == "" || registerform.password.value == ""){
+          alert("請輸入Email及密碼");
+          return false;
+        }
+        if(registerform.password.value != registerform.password1.value){
+          alert("確認密碼不一致");
+          return false;
+        }
+        return true;
+      }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    </style>
+    <style>
+      <%= loginCollect.navsatus %> {display:none;}
+      a:hover {text-decoration:none};
+    </style>
+  </head>
+  <body>
+      <!-- hamburger -->
+      <div class="hamburger">
+        <div class="ham-style hamnav_style">
+          <ul class="ham">
+            <li>
+              <button class="hamburger-menu">
+                <span class="icon-bar"></span>
+                <span class=" icon-bar_short"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <ul class="ham_ul">
+                  <div  class="ham_close"><a href="#"><img src="..\images\index\index320_nav_close_icon.png" alt="logo"></a></div>
+                  <div class="li_hello"><div class="hello">Hi，您好</div></div>
+                  <!-- 活動資訊 -->
+                  <li class="ham_li_padding ham_but_01"><a href="../information/"><div class="left">
+                    <img class="ham_icom icom_mous_out01 icom_mous_out" src="../images/index/index320_infor_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in01" src="../images/index/index320_infor_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">活動資訊</div></a></li>
+                  <!-- 登入 -->
+                  <li class="login_none ham_li_padding ham_but_02" id="here"><a href="../login/"><div class="left">
+                    <img class="ham_icom" src="../images/index/index320_login_icon_white.png" alt="icon">
+                    <!-- <img class="ham_icom icom_mous_in02" src="../images/index/index320_login_icon_blue.png" alt="icon"> -->
+                  </div><div class="ham_li_text">登入</div></a></li><!--class的login_none和logout_none可以消失-->
+                  <!-- 送船 -->
+                  <li class="logout_none ham_li_padding ham_but_03"><a href="../send/"><div class="left">
+                    <img class="ham_icom icom_mous_out03 icom_mous_out" src="../images/index/nav_burger_send_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in03" src="../images/index/nav_burger_send_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">送船</div></a></li><!--登入才要出現-->
+                  <!-- 收船 -->
+                  <li class="logout_none ham_li_padding ham_but_04"><a href="../receive/"><div class="left">
+                    <img class="ham_icom icom_mous_out04 icom_mous_out" src="../images/index/nav_burger_receive_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in04" src="../images/index/nav_burger_receive_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">收船</div></a></li><!--登入才要出現-->
+                  <!-- 登出 -->
+                  <li class="logout_none logout_non ham_li_padding ham_but_05"><a href="../logout/"><div class="left">
+                    <img class="ham_icom icom_mous_out05 icom_mous_out" src="../images/index/nav_burger_logout_icon_white.png" alt="icon">
+                    <img class="ham_icom icom_mous_in05" src="../images/index/nav_burger_logout_icon_blue.png" alt="icon">
+                  </div><div class="ham_li_text">登出</div></a></li>
+                  <div class="clear"></div>
+                </ul>
+          </li>
+          </ul>
+        </div><!--ham-style-->
+        <div class="ham_logo">
+          <a href="../">
+            <div class="hamnav_style">
+              <img src="..\images\index\logo_34x26.png" alt="logo">
+            </div>
+            <div class="nav_li_B hamnav_style">ark</div>
+          </a>
+          </div>
+        <div class="clear"></div>
+        <div id="blackbg00"></div><!--黑背景-->
+      </div><!--hambuger-->
+  <div class="container">
+    <nav>
+      <div class="nav_style">
+        <ul>
+          <li class="nav_li_A"><img src="..\images\index\logo_34x26.png" alt="logo"></li>
+          <li><div class="nav_li_B"><a href="../">方舟．ark</a></div></li>
+        </ul>
+        <ul class="nav_right">
+          <li class="nav_li_C"><a href="../information/"><div>活動資訊</div></a></li>
+          <li class="nav_li_D login_none"id="here"><a href="../login/"><div>登入</div></a></li>
+          <li class="nav_li_C logout_none"><a href="../receive/"><div>收船</div></a></li>
+          <li class="nav_li_C logout_none"><a href="../send/"><div>送船</div></a></li>
+          <li class="nav_li_D logout_none"><a href="../logout/"><div>登出</div></a></li>
+        </ul>
+      </div>
+    <div class="clear"></div>
+    </nav>
+      <!-- 內容區 -->
+    <div class="allpage">
+      <div class="cookie cookie_registered">首頁 > 登入 > 註冊會員</div>
+      <div class="logo_up">
+        <img src="..\images\index\logo_50x50.png" alt="logo">
+      </div>
+      <div class="title_text">創造你的ark帳戶</div>
+      <div class="loginpag registered_page">
+        <div class="registered_page_in">
+          <form class="" name="registerform" action="../mail_registered/" method="post" onSubmit="return checkpasswordsame(this)"><!--會員輸入-->
+            <div class="regist_text">建立帳戶/使用者名稱</div>
+            <label>
+              <input  class="id id_regist" type="text" name="id" value="" onkeydown="return NoSapceInput(event)" placeholder="輸入您的電子郵件">
+            </label>
+            <div class="regist_text">建立密碼</div>
+            <label>
+              <input class="id id_regist" type="password" name="password" value="" onkeydown="return NoSapceInput(event)" placeholder="請輸入6個以上的英文字母">
+            </label>
+            <div class="regist_text">確認密碼</div>
+            <label>
+              <input class="id id_regist" type="password" name="password1" value="" onkeydown="return NoSapceInput(event)" placeholder="再次輸入您設定的密碼">
+            </label>
+            <label class="error_style">
+            <% if(error==1) {%>
+            <%= '帳號格式錯誤' %>
+            <% }else if(error==2){%>
+            <%= '帳號已被註冊過' %>
+            <% } %>
+            </label>
+            <div class="but_email_next_out but_email_next_out_regist">
+                <input class="but_email_next login_pink_hover" type="submit" name="" value="下一步">
+            </div>
+          </form>
+        </div>
+      </div><!--loginpag-->
+    </div><!--allpage-->
+
+    </div><!--container-->
+    <footer>
+      <div class="footer_txt">
+        Copyright © 2017
+      </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ham_script.js"></script>
+  </body>
+</html>
